@@ -1,3 +1,3 @@
-export * from './session';
+export * from './Session';
 export * from './Shop';
 export * from './Subscription';
