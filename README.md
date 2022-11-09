@@ -14,7 +14,7 @@ This demo is a simple Strapi application that uses the [Shopify Strapi Plugin](h
 1. Clone the repository
 
 ```bash
-git clone
+git clone git@github.com:shop3/shopify-strapi-demo.git
 ```
 
 2. Install dependencies
