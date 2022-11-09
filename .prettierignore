@@ -1,0 +1,13 @@
+.cache
+.tmp
+dist
+node_modules
+public/client
+public/uploads
+.editorconfig
+.env
+.gitignore
+.prettierrc
+LICENSE
+package-lock.json
+README.md

@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "greetings",
+  "info": {
+    "singularName": "greeting",
+    "pluralName": "greetings",
+    "displayName": "Greeting",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 70,
+      "minLength": 3
+    },
+    "message": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500,
+      "minLength": 3
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "schedule": {
+      "type": "datetime"
+    },
+    "sender": {
+      "type": "email",
+      "required": true
+    },
+    "recipient": {
+      "type": "email",
+      "required": true
+    },
+    "shop": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::shopify.shop",
+      "required": true
+    }
+  }
+}
