@@ -37,7 +37,23 @@ npm install
 - `SHOPIFY_REDIRECT_URL` - The redirect URL of the Shopify application.
 - `SHOPIFY_APP_NAME` - The name of the Shopify application.
 
-4. Start the application
+4. Start ngrok (reverse proxy server)
+
+```bash
+npm run ngrok
+```
+
+5. Add ngrok endpoints to environment variables inside `.env` and in Shopify app configuration:
+
+.env
+```
+HOST_NAME=example.ngrok.io
+SHOPIFY_REDIRECT_URL=https://example.ngrok.io
+```
+
+Look here for Shopify documentation: https://github.com/shop3/strapi-plugin-shopify#shopify-configuration
+
+6. Start the application
 
 ```bash
 npm run develop
